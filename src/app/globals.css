@@ -2,26 +2,116 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  /* ===========main-website-menu============ */
+  .menu-hover {
+    position: relative;
+    padding: 2px;
+    cursor: pointer;
   }
+
+  .menu-hover:hover {
+    font-weight: bold;
+    color: #417f56;
+  }
+
+  .menu-hover::after {
+    content: "";
+    width: 0;
+    height: 1.5px;
+    background: #417f56;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0.5s;
+  }
+
+  .menu-hover:not(.active):hover::after {
+    width: 100%;
+    right: 0;
+  }
+
+  /* ============object-align-center============= */
+  .box-center {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  .slide-center {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 50%;
+  }
+
+  .text-cover {
+    background: url("../../public/images/text-cover.png") no-repeat;
+    background-size: cover;
+  }
+
+
+  /* ===============net-background-for-empty-page=============== */
+  .empty-cover{
+    background: url('../../public/images/empty-cart.png') no-repeat 50%;
+    background-size: contain;   
+  }
+
+  /* ===========footer-background=========== */
+  .Footer-cover {
+    background: url("../../public/images/Footer.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .transition-box {
+    transition: all 0.5s ease-in-out;
+  }
+
+  /* ===========otp-package-style============ */
+  .inputStyle {
+    border: 1px solid gray;
+    border-radius: 8px;
+    flex: 1 !important;
+    width: 40% !important;
+    height: 40px !important;
+  }
+
+  /* ==========hide-scroll-but-enable========== */
+  .hideScroll{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hideScroll::-webkit-scrollbar{
+    display: none;
+  }
+
+  /* ===========success-payment-cover========= */
+  .celebration-cover{
+    background: url('../../public/images/celebration.png') no-repeat;
+    background-size: cover;
+  }
+  
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer utilities{
+  /* ===========filter-in-menu========== */
+  .filterItem{
+    @apply  whitespace-nowrap rounded-full px-3 py-2 cursor-pointer hover:bg-emerald-700 hover:text-white shadow text-[9px]
+  }
+
+  /* ==========franchise-prose======== */
+  .franchise-prose{
+    @apply relative px-3 text-xs before:block before:rotate-45 before:absolute before:w-3 before:h-3 before:rounded before:border before:border-emerald-600 before:top-0.5 before:-right-1;
+  }
+
+  .btn--primary{
+    @apply bg-emerald-700 text-white text-xs md:text-base  md:my-4 rounded py-2 hover:bg-emerald-600
+  }
+
+  .btn--outline{
+    @apply border transition-all duration-300 flex px-4 py-2 text-sm mx-auto items-center gap-1 border-emerald-700 rounded hover:text-white hover:bg-emerald-700 text-emerald-700
+  }
 }
