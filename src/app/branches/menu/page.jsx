@@ -43,7 +43,7 @@ const Menu = () => {
 
   const filterHandler = (filter) => {
     params.set("filter", filter);
-    router.push(pathname + "?" + params.toString());
+    router.push(pathname + "?" + params.toString(), {scroll: false});
     refetch()
   };
 
