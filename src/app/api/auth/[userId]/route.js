@@ -7,5 +7,11 @@ export async function GET(req, res) {
   let pathname = req.nextUrl.pathname.toString();
   const params = pathname.substring(pathname.indexOf("auth/") + 5);
   const user = GetUserInfo(params);
-  return NextResponse.json(user);
+  return NextResponse.json(user, {
+    headers:{
+      'Access-Control-Allow-origin': "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization"
+    }
+  });
 }

@@ -8,7 +8,13 @@ export async function GET(req, res) {
   if (Usercookie) {
     return NextResponse.json(Usercookie);
   } else {
-    return NextResponse.json("ابتدا باید وارد حساب کاربری خود شوید");
+    return NextResponse.json("ابتدا باید وارد حساب کاربری خود شوید", {
+      headers:{
+        'Access-Control-Allow-origin': "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization"
+      }
+    });
   }
 }
 
@@ -48,6 +54,12 @@ export async function POST(req, res) {
   return NextResponse.json({
     status: 200,
     message: "کد اعتبارسنجی با موفقیت ارسال شد.",
+  }, {
+    headers:{
+      'Access-Control-Allow-origin': "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization"
+    }
   });
 }
 
