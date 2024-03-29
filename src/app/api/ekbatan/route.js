@@ -1,6 +1,5 @@
 import { Foods } from "@/Data/Food";
-import { useSearchParams } from "next/navigation";
-import { NextResponse, NextRequest } from "next/server";
+import { NextResponse } from "next/server";
 
 export async function GET(req, res) {
   const filter = req.nextUrl.searchParams.get("filter");
@@ -44,13 +43,7 @@ export async function GET(req, res) {
 
 
 
-  return NextResponse.json(filterFoods, {
-    headers:{
-      'Access-Control-Allow-origin': "*",
-      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
-      "Access-Control-Allow-Headers": "Content-Type, Authorization"
-    }
-  });
+  return NextResponse.json(filterFoods);
 }
 
 
@@ -59,21 +52,9 @@ export async function POST(req ,res){
   const targetFood = Foods.find((food)=>food.id == foodId)
   targetFood.isLiked = !targetFood.isLiked;
   if (targetFood.isLiked) {
-    return NextResponse.json(`${targetFood.title} به علاقه‌مندی‌ها اضافه شد.`, {
-      headers:{
-        'Access-Control-Allow-origin': "*",
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization"
-      }
-    });
+    return NextResponse.json(`${targetFood.title} به علاقه‌مندی‌ها اضافه شد.`);
   }else{
-    return NextResponse.json(`${targetFood.title} از علاقه‌مندی‌ها حذف شد.`, {
-      headers:{
-        'Access-Control-Allow-origin': "*",
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization"
-      }
-    });
+    return NextResponse.json(`${targetFood.title} از علاقه‌مندی‌ها حذف شد.`);
 
   }
 }
