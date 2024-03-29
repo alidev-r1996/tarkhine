@@ -1,7 +1,10 @@
 const { default: axios } = require("axios");
 
 export const app = axios.create({
-  baseURL: process.env.NODE_ENV == "development"?  "http://localhost:3000/api": "https://www.tarkhine-rjbqkq88b-alidevr1996s-projects.vercel.app/api",
+  baseURL:
+    process.env.NODE_ENV == "development"
+      ? "http://localhost:3000/api"
+      : "https://tarkhine-zeta.vercel.app/api",
   withCredentials: true,
 });
 
