@@ -1,5 +1,9 @@
 This front-end Project Created By next.js Responsive according to free figma design. it's about food market, Data is static, but have a some logic for cart section (add, increment, decrement, ...) with redux-toolkit, search and filter food with query in menu section that created by serverless internal api with next.js.
 
+in a login page, after inter your number, enter any code you want, this is a formal otp.
+
+
+
 ### Packages used in project:
 ![next.js](https://camo.githubusercontent.com/11561ed7d7e5735041de1effd78226dfc545474e6f468482f91223957fe7234e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6e6578742e6a732d3030303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d6e657874646f746a73266c6f676f436f6c6f723d7768697465)
 ![tailwind.css](https://camo.githubusercontent.com/4035639fa9b5a59d0686daa6e2b37156b8e00f198814e38f3a44398159426bf9/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5461696c77696e645f4353532d3039323734393f7374796c653d666f722d7468652d6261646765266c6f676f3d7461696c77696e64637373266c6f676f436f6c6f723d303642364434266c6162656c436f6c6f723d303030303030)
