@@ -191,6 +191,17 @@ const Header = () => {
             تماس با ما
           </p>
         </Link>
+        <Link href="/FAQ">
+          <p
+            className={`${
+              pathname == "/FAQ"
+                ? "border-b-emerald-600 text-emerald-700 font-bold border-b"
+                : ""
+            }  menu-hover`}
+          >
+           قوانین و مقررات
+          </p>
+        </Link>
       </div>
       <div className="flex items-center gap-1">
         <p
@@ -367,6 +378,12 @@ const Header = () => {
             <div className="flex cursor-pointer items-center gap-1 py-4 px-2 border-b border-gray-300">
               <PhoneIcon className="w-4 h-4 stroke-slate-600" />
               <p>تماس با ما </p>
+            </div>
+          </Link>
+          <Link href="/FAQ">
+            <div className="flex cursor-pointer items-center gap-1 py-4 px-2 border-b border-gray-300">
+              <PhoneIcon className="w-4 h-4 stroke-slate-600" />
+              <p> قوانین و مقررات</p>
             </div>
           </Link>
         </div>
