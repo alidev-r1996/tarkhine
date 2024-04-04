@@ -1,8 +1,9 @@
 "use client";
 
-import InputCodeOTP from "@/common/OTP";
 import Searchpopup from "@/common/Search";
+import AuthContainer from "@/components/Auth/AuthContainer";
 import http from "@/services/configs/Config";
+import { LogoutUser } from "@/services/requests/Users/UserServices";
 import {
   MagnifyingGlassIcon,
   ShoppingCartIcon,
@@ -22,7 +23,8 @@ import {
 } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import toast from "react-hot-toast";
 
 const Header = () => {
   const [burgerShow, setBurgerShow] = useState(false);
@@ -33,7 +35,6 @@ const Header = () => {
   const [search, setSearch] = useState(false);
   const [Login, setLogin] = useState(false);
 
-
   const UserHandler = async () => {
     const { data } = await http.get("/auth");
     if (data.value) {
@@ -43,12 +44,15 @@ const Header = () => {
     }
   };
 
-  
+  const signout = async () => {
+    await LogoutUser();
+    toast.success("با موفقیت از حساب خود خارج شدید!");
+  };
 
   return (
     <div className="p-4 flex items-center justify-between bg-white shadow relative">
       <Searchpopup search={search} setSearch={setSearch} />
-      <InputCodeOTP Login={Login} setLogin={setLogin} />
+      {Login && <AuthContainer onClose={() => setLogin(!Login)} />}
       <div
         className={`${
           burgerShow ? "block md:hidden" : "hidden"
@@ -253,7 +257,10 @@ const Header = () => {
               </div>
             </Link>
             <hr />
-            <div className="flex items-center pr-2 hover:text-white hover:bg-emerald-600 ">
+            <div
+              onClick={signout}
+              className="flex items-center pr-2 hover:text-white hover:bg-emerald-600 "
+            >
               <ArrowLeftOnRectangleIcon className="w-6 h-6" />
               <p className="p-3">خروج از حساب </p>
             </div>

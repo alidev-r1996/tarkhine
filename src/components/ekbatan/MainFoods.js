@@ -6,11 +6,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { AddToCart } from "@/redux/features/cart/cartSlice";
 import { useState } from "react";
 import http from "@/services/configs/Config";
-import InputCodeOTP from "@/common/OTP";
 import { toast } from "react-hot-toast";
 import IsInCart from "@/utils/IsInCart";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { LikeFoods } from "@/services/requests/Foods/FoodsServices";
+import AuthContainer from "../Auth/AuthContainer";
 
 const FoodUi = ({ foods}) => {
   const dispatch = useDispatch();
@@ -50,7 +50,7 @@ const FoodUi = ({ foods}) => {
 
   return (
     <>
-      <InputCodeOTP Login={Login} setLogin={setLogin} />
+      {Login && <AuthContainer onClose={() => setLogin(!Login)} />}
       {foods.map((food) => {
         return (
           <div

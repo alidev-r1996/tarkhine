@@ -8,8 +8,8 @@ import FoodCart from "./FoodCart";
 import { useEffect, useState } from "react";
 import RemoveCart from "./ClearCart";
 import { useSelector } from "react-redux";
-import InputCodeOTP from "@/common/OTP";
 import http from "@/services/configs/Config";
+import AuthContainer from "../Auth/AuthContainer";
 
 const ShoppingCart = ({ Foods, setSteps }) => {
   const [clearCart, setClearCart] = useState(false);
@@ -27,7 +27,7 @@ const ShoppingCart = ({ Foods, setSteps }) => {
 
   return (
     <>
-      <InputCodeOTP Login={Login} setLogin={setLogin} />
+      {Login && <AuthContainer onClose={()=>setLogin(!Login)} />}
       <RemoveCart clearCart={clearCart} setClearCart={setClearCart} />
       <div className="flex flex-col md:flex-row items-start justify-between p-4 gap-4">
         <h1 className="font-bold text-sm md:hidden block mx-auto p-2">

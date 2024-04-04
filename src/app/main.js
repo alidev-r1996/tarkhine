@@ -3,11 +3,11 @@
 import React, { useState } from "react";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import Searchpopup from "@/common/Search";
-import InputCodeOTP from "@/common/OTP";
 import Slider from "@/common/Slider";
 import Introduction from "@/components/Main-Page/Introduction";
 import Branchs from "@/components/Main-Page/Branchs";
 import Menu from "@/components/Main-Page/Menu";
+import AuthContainer from "@/components/Auth/AuthContainer";
 
 export default function MainPage() {
   const [search, setSearch] = useState(false);
@@ -15,7 +15,7 @@ export default function MainPage() {
   return (
     <div>
       <Searchpopup search={search} setSearch={setSearch} />
-      <InputCodeOTP Login={Login} setLogin={setLogin} />
+      {Login && <AuthContainer onClose={()=>setLogin(!Login)} />}
         <div className=" h-60 md:h-[340px] relative flex justify-center items-center">
           <Slider />
         </div>
