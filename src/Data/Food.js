@@ -2,7 +2,7 @@ export const Foods = [
     {
         id: 1,
         title: "کوفته برنجی",
-        img: "https://s8.uupload.ir/files/01_wlo.png",
+        img: "https://s8.uupload.ir/files/01_gluf.png",
         isLiked: false,
         rate:5,
         rateCount: 35,
@@ -15,7 +15,7 @@ export const Foods = [
     {
         id: 2,
         title: "کشک بادمجان",
-        img: "https://s8.uupload.ir/files/02_upx2.png",
+        img: "https://s8.uupload.ir/files/02_rkp7.png",
         isLiked: false,
         rate:5,
         rateCount: 44,
@@ -28,7 +28,7 @@ export const Foods = [
     {
         id: 3,
         title: "میرزا قاسمی",
-        img: "https://s8.uupload.ir/files/03_qb30.png",
+        img: "https://s8.uupload.ir/files/03_quv2.png",
         isLiked: false,
         rate:5,
         rateCount: 28,
@@ -41,7 +41,7 @@ export const Foods = [
     {
         id: 4,
         title: "باقلاقاتوق",
-        img: "https://s8.uupload.ir/files/04_fjn.png",
+        img: "https://s8.uupload.ir/files/04_zxjr.png",
         isLiked: false,
         rate:4,
         rateCount: 67,
@@ -54,7 +54,7 @@ export const Foods = [
     {
         id: 5,
         title: "فلافل",
-        img: "https://s8.uupload.ir/files/05_j7jx.png",
+        img: "https://s8.uupload.ir/files/05_3kaf.png",
         isLiked: false,
         rate:3,
         rateCount: 71,
@@ -67,7 +67,7 @@ export const Foods = [
     {
         id: 6,
         title: "کله جوش",
-        img: "https://s8.uupload.ir/files/06_grh6.png",
+        img: "https://s8.uupload.ir/files/06_2dh.png",
         isLiked: false,
         rate:3,
         rateCount: 38,
@@ -80,7 +80,7 @@ export const Foods = [
     {
         id: 7,
         title: "بورانی بادمجان ",
-        img: "https://s8.uupload.ir/files/07_mja4.png",
+        img: "https://s8.uupload.ir/files/07_x4gn.png",
         isLiked: false,
         rate:5,
         rateCount: 21,
@@ -93,7 +93,7 @@ export const Foods = [
     {
         id: 8,
         title: "بادمجان شکم‌پر  ",
-        img: "https://s8.uupload.ir/files/08_cp7r.png",
+        img: "https://s8.uupload.ir/files/08_v5qg.png",
         isLiked: false,
         rate:4,
         rateCount: 18,
@@ -106,7 +106,7 @@ export const Foods = [
     {
         id: 9,
         title: "دلمه برگ کلم   ",
-        img: "https://s8.uupload.ir/files/09_m9ym.png",
+        img: "https://s8.uupload.ir/files/09_c4y6.png",
         isLiked: false,
         rate:5,
         rateCount: 46,
@@ -119,7 +119,7 @@ export const Foods = [
     {
         id:10,
         title: "دلمه برگ مو",
-        img: "https://s8.uupload.ir/files/10_6n9u.png",
+        img: "https://s8.uupload.ir/files/10_0n8x.png",
         isLiked: false,
         rate:2,
         rateCount: 52,
@@ -132,7 +132,7 @@ export const Foods = [
     {
         id:11,
         title: "کوکو سبزی  ",
-        img: "https://s8.uupload.ir/files/11_w1sy.png",
+        img: "https://s8.uupload.ir/files/11_w2hy.png",
         isLiked: false,
         rate:5,
         rateCount: 59,
@@ -145,7 +145,7 @@ export const Foods = [
     {
         id:12,
         title: "کوکو سیب‌زمینی و عدس ",
-        img: "https://s8.uupload.ir/files/12_rkrf.png",
+        img: "https://s8.uupload.ir/files/12_b6s.png",
         isLiked: false,
         rate:1,
         rateCount: 51,
@@ -158,7 +158,7 @@ export const Foods = [
     {
         id:13,
         title: "پاستا سبزیجات",
-        img: "https://s8.uupload.ir/files/13_n6h2.png",
+        img: "https://s8.uupload.ir/files/13_bg8a.png",
         isLiked: false,
         rate:5,
         rateCount: 65,
@@ -171,7 +171,7 @@ export const Foods = [
     {
         id:14,
         title: "پاستا بلونز ",
-        img: "https://s8.uupload.ir/files/14_wxh.png",
+        img: "https://s8.uupload.ir/files/14_06rw.png",
         isLiked: false,
         rate:4,
         rateCount: 61,
@@ -184,7 +184,7 @@ export const Foods = [
     {
         id:15,
         title: "راتاتویی",
-        img: "https://s8.uupload.ir/files/15_oxbv.png",
+        img: "https://s8.uupload.ir/files/15_3moa.png",
         isLiked: false,
         rate:4,
         rateCount: 72,
@@ -197,7 +197,7 @@ export const Foods = [
     {
         id:16,
         title: "لازانیا",
-        img: "https://s8.uupload.ir/files/16_kdek.png",
+        img: "https://s8.uupload.ir/files/16_q6zv.png",
         isLiked: false,
         rate:5,
         rateCount: 64,
@@ -210,7 +210,7 @@ export const Foods = [
     {
         id:17,
         title: "سوشی",
-        img: "https://s8.uupload.ir/files/17_7jmm.png",
+        img: "https://s8.uupload.ir/files/17_0omg.png",
         isLiked: false,
         rate:4,
         rateCount: 44,
@@ -223,7 +223,7 @@ export const Foods = [
     {
         id:18,
         title: "پاکورا سبزیجات",
-        img: "https://s8.uupload.ir/files/18_j7vd.png",
+        img: "https://s8.uupload.ir/files/18_9rtt.png",
         isLiked: false,
         rate:4,
         rateCount: 49,
@@ -236,7 +236,7 @@ export const Foods = [
     {
         id:19,
         title: " کالزونه اسفناج",
-        img: "https://s8.uupload.ir/files/19_hsam.png",
+        img: "https://s8.uupload.ir/files/19_066w.png",
         isLiked: false,
         rate:5,
         rateCount: 43,
@@ -249,7 +249,7 @@ export const Foods = [
     {
         id:20,
         title: "  پالاک پنیر ",
-        img: "https://s8.uupload.ir/files/20_spk2.png",
+        img: "https://s8.uupload.ir/files/20_v9ce.png",
         isLiked: false,
         rate:4,
         rateCount: 37,
@@ -262,7 +262,7 @@ export const Foods = [
     {
         id:21,
         title: " پیتزا روکولا",
-        img: "https://s8.uupload.ir/files/21_gr6.png",
+        img: "https://s8.uupload.ir/files/21_67d.png",
         isLiked: false,
         rate:5,
         rateCount: 19,
@@ -275,7 +275,7 @@ export const Foods = [
     {
         id:22,
         title: "پیتزا بادمجان و زیتون",
-        img: "https://s8.uupload.ir/files/22_78ri.png",
+        img: "https://s8.uupload.ir/files/22_et5g.png",
         isLiked: false,
         rate:4,
         rateCount: 46,
@@ -288,7 +288,7 @@ export const Foods = [
     {
         id:23,
         title: "پیتزا سبزیجات و خامه",
-        img: "https://s8.uupload.ir/files/23_4gr4.png",
+        img: "https://s8.uupload.ir/files/23_nq97.png",
         isLiked: false,
         rate:4,
         rateCount: 41,
@@ -301,7 +301,7 @@ export const Foods = [
     {
         id:24,
         title: "پیتزا قارچ",
-        img: "https://s8.uupload.ir/files/24_gwrj.png",
+        img: "https://s8.uupload.ir/files/24_iuid.png",
         isLiked: false,
         rate:3,
         rateCount: 19,
@@ -314,7 +314,7 @@ export const Foods = [
     {
         id:25,
         title: "پیتزا پپرونی",
-        img: "https://s8.uupload.ir/files/25_ks3.png",
+        img: "https://s8.uupload.ir/files/25_v17x.png",
         isLiked: false,
         rate:4,
         rateCount: 72,
@@ -327,7 +327,7 @@ export const Foods = [
     {
         id:26,
         title: "پیتزا اسفناج",
-        img: "https://s8.uupload.ir/files/26_as3.png",
+        img: "https://s8.uupload.ir/files/26_0jxu.png",
         isLiked: false,
         rate:5,
         rateCount: 18,
@@ -340,7 +340,7 @@ export const Foods = [
     {
         id:27,
         title: "پیتزا مارگاریتا",
-        img: "https://s8.uupload.ir/files/27_ap95.png",
+        img: "https://s8.uupload.ir/files/27_begr.png",
         isLiked: false,
         rate:2,
         rateCount: 28,
@@ -366,7 +366,7 @@ export const Foods = [
     {
         id:29,
         title: "ساندویچ کتلت مخصوص ",
-        img: "https://s8.uupload.ir/files/29_l6fh.png",
+        img: "https://s8.uupload.ir/files/29_h49.png",
         isLiked: false,
         rate:5,
         rateCount: 36,
@@ -379,7 +379,7 @@ export const Foods = [
     {
         id:30,
         title: "ساندویچ سوسیس کوکتل",
-        img: "https://s8.uupload.ir/files/30_0odi.png",
+        img: "https://s8.uupload.ir/files/30_xl3m.png",
         isLiked: false,
         rate:4,
         rateCount: 42,
@@ -392,7 +392,7 @@ export const Foods = [
     {
         id:31,
         title: "ساندویچ کتلت کدو سبز",
-        img: "https://s8.uupload.ir/files/31_1i5s.png",
+        img: "https://s8.uupload.ir/files/31_woym.png",
         isLiked: false,
         rate:5,
         rateCount: 45,
@@ -405,7 +405,7 @@ export const Foods = [
     {
         id:32,
         title: "پنینی اسفناج",
-        img: "https://s8.uupload.ir/files/32_y778.png",
+        img: "https://s8.uupload.ir/files/32_ev8y.png",
         isLiked: false,
         rate:3,
         rateCount: 36,
