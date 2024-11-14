@@ -353,7 +353,7 @@ export const Foods = [
     {
         id:28,
         title: "پیتزا پنیر",
-        img: "https://s8.uupload.ir/files/28_b9a2.png",
+        img: "https://s8.uupload.ir/files/28_q3jl.png",
         isLiked: false,
         rate:3,
         rateCount: 22,
