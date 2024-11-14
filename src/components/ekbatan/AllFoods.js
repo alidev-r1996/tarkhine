@@ -10,6 +10,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
+import AuthContainer from "../Auth/AuthContainer";
 
 const AllFoodUi = ({ foods }) => {
   const dispatch = useDispatch();
@@ -49,6 +50,7 @@ const AllFoodUi = ({ foods }) => {
 
   return (
     <>
+    {Login && <AuthContainer onClose={() => setLogin(!Login)} />}
       {foods.map((food) => {
         return (
           <div

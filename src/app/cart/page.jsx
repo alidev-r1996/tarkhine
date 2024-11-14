@@ -10,10 +10,10 @@ import { useEffect, useState } from "react";
 import CompleteInfo from "@/components/cart/StepTwo";
 import Payment from "@/components/cart/StepThree";
 import PaymentResult from "@/components/cart/PaymentResult";
-import InputCodeOTP from "@/common/OTP";
 import ShoppingCart from "@/components/cart/StepOne";
 import Loader from "@/common/Loader";
 import { useSelector } from "react-redux";
+import AuthContainer from "@/components/Auth/AuthContainer";
 
 const Cart = () => {
   const [cart, setCart] = useState(false);
@@ -45,7 +45,7 @@ const Cart = () => {
     <>
       {!resultPayment && (
         <>
-          <InputCodeOTP Login={Login} setLogin={setLogin} />
+          {Login && <AuthContainer onClose={()=>setLogin(!Login)} />}
 
           <div className="md:flex hidden items-center justify-between w-4/5 my-6 mx-auto p-4 gap-1">
             <div
